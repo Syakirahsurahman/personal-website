@@ -1,0 +1,185 @@
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: TW Cen MT;
+  padding: 10px;
+  background: darkturquoise;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: paleturquoise;
+}
+
+.header h1 {
+  font-size: 60px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  font-size: 21px;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: white;
+  color: #0000ffff;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  font-size: 15px;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  font-size: 15px;
+  background-color: darkturquoise;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: paleturquoise;
+  padding: 20px;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  font-family: Arial;
+  font-size: 15px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+  <script type="text/javascript" src="engine1/jquery.js"></script>
+
+<body>
+<head>
+<title>Gallery</title>
+<link rel="shortcut icon" type="image/png" href="img/book.png"
+</head>
+<div class="header">
+  <h1><b>Nursyakirah Surahman<b></h1>
+  <p><marquee loop="20"> Welcome To My Website</marquee loop="20"></p>
+</div>
+
+<div class="topnav">
+  <a href="Nursyakirah_index.html">Home</a>
+  <a href="Nursyakirah_biodata.html">Biodata</a>
+  <a href="Nursyakirah_exp.html">Experience</a>
+  <a href="Nursyakirah_edu.html">Education</a>
+  <a href="Nursyakirah_gallery.html">Gallery</a>
+  <a href="Nursyakirah_family.html">Family</a>
+  <a href="https://wa.link/bjjr42" style="float:right">Contact Me</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+  <div>
+      <h2></h2>
+    </div>
+    <div class="card">
+      <h2><b>Gallery<b></h2>
+      <h5><i>“My Family is my everything”<i></h5>
+
+      <script>
+  function Family(a)
+  {
+   var pic;
+   if (a==2)
+   {
+    pic= "images/big family.jpg"
+   }
+   else
+   {
+    pic="images/love.jpg"
+   }
+   document.getElementById('gambar').src=pic;
+  }
+ </script>
+ <p></p>
+ <img src="images/family day.jpg" id="gambar" width="200" height="200">
+
+ <p>
+  <button type="button" onclick="Family(2)">My family </button>
+  <button type="button" onclick="Family(1)">My love </button>
+ </p>
+    
+    <img src="images/konvo.jpg" alt="myself" style="width:100px;height:100px;">
+        <br>
+    <img src="images/my everything.jpg" alt="Rayaa" style="width:120px;height:100px;">  
+    <img src="images/baby.jpg" alt="cake" style="width:120px;height:110px;">
+  
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>♫ One Direction</h2>
+      <audio controls autoplay muted>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="lagu/What Makes You Beautiful.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</body>
+</html>
